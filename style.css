@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #6b6b6b;
+}
+
+#score{
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+}
+#character img{
+    height: 50px;
+    width: auto;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    10%{top: 120px;}
+    30%{top: 90px;}
+    50%{top: 85px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    left: 480px;
+    animation: block 1.5s infinite linear;
+}
+#block img{
+    height: 50px;
+    width: auto;
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
+#game-over-board{
+    padding: 70px;
+    text-align: center;
+}
